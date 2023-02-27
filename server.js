@@ -34,7 +34,7 @@ app.use(express.urlencoded({extended : true}))
 app.use('/api/todos',Router)
 app.use(errorHandler)
 
-app.use('/frontend' , express.static('build'))
+app.use('/' , express.static('build'))
 
 
 
